@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank Problem</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Water Tank Problem </h2>
+        <div class="form-section">
+            <label for="unitinput" class="form-label">Input Heights:</label>
+            <input type="text" id="unitinput" class="form-input" placeholder="Enter heights, e.g., 0,4,0,0,6,0,6,4,0">
+            <button class="btn" onclick="calculateWaterStorage()">Calculate</button>
+        </div>
+
+        <div class="table-section">
+            <h5>Input </h5>
+            <table id="tank-with-walls" class="tank-table"></table>
+        </div>
+
+        <div class="table-section">
+            <h5>Output: <span id="result">0 Units</span></h5>
+            <table id="tank-water-only" class="tank-table"></table>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
